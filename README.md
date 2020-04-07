@@ -96,12 +96,10 @@ au Syntax * RainbowParenthesesLoadBraces
 ``` proxy shell settings  
 
 #!/bin/zsh
-proxy="10.144.1.10:8080"  
 if test $1="set"
 then
 	export HTTP_PROXY=$proxy
 	export HTTPS_PROXY=$proxy
-	export no_proxy=".nokia-sbell.com,.nsn-rdent.net,.alcatel-lucent.com"
 else
 	unset HTTP_PROXY
 	unset HTTPS_PROXY
